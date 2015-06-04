@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage{amssymb, amsmath}
+
+\begin{document}
+
+\begin{align*}
+  v_{enc} &= 0\\
+  v_{C_1}(0) &= 0\\
+  s &= j \omega\\
+  R_1C_1 &= \tau\\
+  Z_{C_1}&= \frac{1}{sC}\\
+  V_{C_1}(s) &= \frac{V_{cc}}{s}\frac{1/sC_1}{R_1+1/sC_1}\\
+  &= V_{cc}\frac{1}{s(1+sR_1C_1)}\\
+  &\text{Partial Fraction Method}\\
+  &= V_{cc}\bigg( \frac{k_1}{s}+\frac{k_2}{1+s\tau}\bigg)\\
+  k_1 = sV_{C_1}(s)|_{s=0} &= 1\\
+  k_2 = (1+s\tau)V_{C_1}(s)|_{s=(-\frac{1}{\tau})} &= -\tau\\
+  &= V_{cc}\bigg(\frac{1}{s}-\frac{\tau}{s \tau + 1} \bigg)\\
+  \mathcal{L}^{-1}\{
+    V_{C_1}(s)\}=v_{C_1}(t)&=V_{cc}\bigg(1-e^{-\frac{t}{\tau}}\bigg)
+\end{align*}
+
+\end{document}

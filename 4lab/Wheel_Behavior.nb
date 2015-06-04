@@ -1,0 +1,187 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      6228,        178]
+NotebookOptionsPosition[      5842,        160]
+NotebookOutlinePosition[      6177,        175]
+CellTagsIndexPosition[      6134,        172]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{"RCWData", ":=", 
+  RowBox[{"{", 
+   RowBox[{
+   "115", ",", "235", ",", "348", ",", "470", ",", "587", ",", "706", ",", 
+    "830", ",", "938", ",", "996", ",", "1000"}], 
+   "}"}]}], "\[IndentingNewLine]", 
+ RowBox[{"LCWData", ":=", 
+  RowBox[{"{", 
+   RowBox[{
+   "130", ",", "253", ",", "385", ",", "513", ",", "638", ",", "762", ",", 
+    "895", ",", "913", ",", "918", ",", "927"}], 
+   "}"}]}], "\[IndentingNewLine]", 
+ RowBox[{"RCCData", ":=", 
+  RowBox[{"{", 
+   RowBox[{
+   "111", ",", "230", ",", "341", ",", "470", ",", "578", ",", "696", ",", 
+    "808", ",", "924", ",", "1000", ",", "1040"}], 
+   "}"}]}], "\[IndentingNewLine]", 
+ RowBox[{"LCCData", ":=", 
+  RowBox[{"{", 
+   RowBox[{
+   "129", ",", "253", ",", "380", ",", "514", ",", "637", ",", "765", ",", 
+    "881", ",", "931", ",", "934", ",", "935"}], 
+   "}"}]}], "\[IndentingNewLine]", 
+ RowBox[{"percent", ":=", 
+  RowBox[{"{", 
+   RowBox[{
+   "10", ",", "20", ",", "30", ",", "40", ",", "50", ",", "60", ",", "70", 
+    ",", "80", ",", "90", ",", "100"}], "}"}]}], "\[IndentingNewLine]", 
+ RowBox[{"RCWData2", ":=", 
+  RowBox[{"Thread", "[", 
+   RowBox[{"{", 
+    RowBox[{"percent", ",", "RCWData"}], "}"}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"LCWData2", ":=", 
+  RowBox[{"Thread", "[", 
+   RowBox[{"{", 
+    RowBox[{"percent", ",", "LCWData"}], "}"}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"RCCData2", ":=", 
+  RowBox[{"Thread", "[", 
+   RowBox[{"{", 
+    RowBox[{"percent", ",", "RCCData"}], "}"}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"LCCData2", ":=", 
+  RowBox[{"Thread", "[", 
+   RowBox[{"{", 
+    RowBox[{"percent", ",", "LCCData"}], "}"}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ListLinePlot", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"RCWData2", ",", "RCCData2"}], "}"}], ",", 
+    RowBox[{"PlotLabel", "\[Rule]", "\"\<Right Wheel Speed vs. PWM%\>\""}], 
+    ",", 
+    RowBox[{"ImageSize", "\[Rule]", "500"}], ",", 
+    RowBox[{"GridLines", "\[Rule]", "Automatic"}], ",", 
+    RowBox[{"GridLinesStyle", "\[Rule]", "Dashed"}], ",", 
+    RowBox[{"AxesLabel", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\"\<%PWM\>\"", ",", "\"\<Frequency [Hz]\>\""}], "}"}]}]}], 
+   "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.591837470812467*^9, 3.591837907600986*^9}, {
+   3.591837947323062*^9, 3.591838000176712*^9}, {3.592330455898053*^9, 
+   3.592330484261305*^9}, {3.592330517111569*^9, 3.592330643035009*^9}, 
+   3.5923307034774942`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ListLinePlot", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"LCWData2", ",", "LCCData2"}], "}"}], ",", 
+    RowBox[{"PlotLabel", "\[Rule]", "\"\<Right Wheel Speed vs. PWM%\>\""}], 
+    ",", 
+    RowBox[{"ImageSize", "\[Rule]", "500"}], ",", 
+    RowBox[{"GridLines", "\[Rule]", "Automatic"}], ",", 
+    RowBox[{"GridLinesStyle", "\[Rule]", "Dashed"}], ",", 
+    RowBox[{"AxesLabel", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\"\<%PWM\>\"", ",", "\"\<Frequency [Hz]\>\""}], "}"}]}]}], 
+   "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.5923306554680853`*^9, 3.5923306578562613`*^9}, 
+   3.5923307013551407`*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ListLinePlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"RCWData2", ",", "RCCData2", ",", "LCWData2", ",", "LCCData2"}], 
+    "}"}], ",", 
+   RowBox[{"PlotLabel", "\[Rule]", "\"\<Wheel Speeds vs. PWM%\>\""}], ",", 
+   RowBox[{"ImageSize", "\[Rule]", "500"}], ",", 
+   RowBox[{"GridLines", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"GridLinesStyle", "\[Rule]", "Dashed"}], ",", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\"\<%PWM\>\"", ",", "\"\<Frequency [Hz]\>\""}], "}"}]}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.592330708145924*^9, 3.592330719283011*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {{}, {}, 
+    {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+     LineBox[{{10., 115.}, {20., 235.}, {30., 348.}, {40., 470.}, {50., 
+      587.}, {60., 706.}, {70., 830.}, {80., 938.}, {90., 996.}, {100., 
+      1000.}}]}, 
+    {RGBColor[0.6, 0.24, 0.4428931686004542], 
+     LineBox[{{10., 111.}, {20., 230.}, {30., 341.}, {40., 470.}, {50., 
+      578.}, {60., 696.}, {70., 808.}, {80., 924.}, {90., 1000.}, {100., 
+      1040.}}]}, 
+    {RGBColor[0.6, 0.5470136627990908, 0.24], 
+     LineBox[{{10., 130.}, {20., 253.}, {30., 385.}, {40., 513.}, {50., 
+      638.}, {60., 762.}, {70., 895.}, {80., 913.}, {90., 918.}, {100., 
+      927.}}]}, 
+    {RGBColor[0.24, 0.6, 0.33692049419863584`], 
+     LineBox[{{10., 129.}, {20., 253.}, {30., 380.}, {40., 514.}, {50., 
+      637.}, {60., 765.}, {70., 881.}, {80., 931.}, {90., 934.}, {100., 
+      935.}}]}}, {}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->True,
+  AxesLabel->{
+    FormBox["\"%PWM\"", TraditionalForm], 
+    FormBox["\"Frequency [Hz]\"", TraditionalForm]},
+  AxesOrigin->{0, 0},
+  GridLines->Automatic,
+  GridLinesStyle->Dashing[{Small, Small}],
+  ImageSize->{589., Automatic},
+  Method->{},
+  PlotLabel->FormBox["\"Wheel Speeds vs. PWM%\"", TraditionalForm],
+  PlotRange->{{0, 100.}, {0, 1040.}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{2., 2.}, {20.8, 20.8}}]], "Output",
+ CellChangeTimes->{{3.592330704657261*^9, 3.592330719730545*^9}}]
+}, Open  ]]
+},
+WindowSize->{1278, 783},
+WindowMargins->{{0, Automatic}, {2, Automatic}},
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 2495, 67, 253, "Input"],
+Cell[3055, 89, 652, 16, 55, "Input"],
+Cell[CellGroupData[{
+Cell[3732, 109, 620, 14, 55, "Input"],
+Cell[4355, 125, 1471, 32, 379, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

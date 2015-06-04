@@ -1,0 +1,63 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      1421,         53]
+NotebookOptionsPosition[      1119,         37]
+NotebookOutlinePosition[      1454,         52]
+CellTagsIndexPosition[      1411,         49]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{"vo", ":=", "4.4"}], "\[IndentingNewLine]", 
+ RowBox[{"vrat", ":=", 
+  FractionBox["vo", "vi"]}], "\[IndentingNewLine]", 
+ RowBox[{"vi", ":=", "2.5"}], "\[IndentingNewLine]", 
+ RowBox[{"20", " ", 
+  RowBox[{"Log10", "[", 
+   FractionBox["vo", "vi"], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.5937181638351707`*^9, 3.593718300639854*^9}, {
+  3.593718331100132*^9, 3.593718416360901*^9}}],
+
+Cell[BoxData["4.910253356282998`"], "Output",
+ CellChangeTimes->{{3.593718351933467*^9, 3.593718418961979*^9}}]
+}, Open  ]]
+},
+WindowSize->{1278, 783},
+WindowMargins->{{0, Automatic}, {2, Automatic}},
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 410, 9, 125, "Input"],
+Cell[992, 33, 111, 1, 64, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

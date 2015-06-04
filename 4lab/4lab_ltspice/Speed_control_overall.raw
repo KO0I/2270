@@ -1,0 +1,25 @@
+Title: * H:\Dropbox\2270ecen\4lab\4lab_ltspice\Speed_control_overall.asc
+Date: Thu Nov 07 13:51:42 2013
+Plotname: Transient Analysis
+Flags: real forward
+No. Variables: 95
+No. Points:            0
+Offset:   0.0000000000000000e+000
+Command: Linear Technology Corporation LTspice IV
+Backannotation: x3 b1 b2 dcsupply dc1 dc2 dcgnd
+Backannotation: x4 +dc -dc enc omega
+Backannotation: x6 c ref sense dc5v dc10v b
+Backannotation: x7 c ref sense dc5v dc10v b
+Backannotation: x1 vcc sense_pwm enc
+Backannotation: x2 b1 b2 dcsupply dc1 dc2 dcgnd
+Backannotation: x5 +dc -dc enc omega
+Backannotation: x8 c ref sense dc5v dc10v b
+Backannotation: x9 c ref sense dc5v dc10v b
+Backannotation: x10 vcc sense_pwm enc
+Backannotation: x6:u2 1 2 3 4 5
+Backannotation: x7:u2 1 2 3 4 5
+Backannotation: x1:u1 1 2 3 4 5 6 7 8
+Backannotation: x8:u2 1 2 3 4 5
+Backannotation: x9:u2 1 2 3 4 5
+Backannotation: x10:u1 1 2 3 4 5 6 7 8
+Variables:

@@ -1,0 +1,22 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal 144 128 -48 -48
+TEXT 52 161 Bottom 2 Feedback Control
+PIN -48 16 LEFT 8
+PINATTR PinName C
+PINATTR SpiceOrder 1
+PIN -48 64 LEFT 8
+PINATTR PinName Ref
+PINATTR SpiceOrder 2
+PIN -48 112 LEFT 8
+PINATTR PinName Sense
+PINATTR SpiceOrder 3
+PIN 0 -48 TOP 8
+PINATTR PinName DC5V
+PINATTR SpiceOrder 4
+PIN 96 -48 TOP 8
+PINATTR PinName DC10V
+PINATTR SpiceOrder 5
+PIN 144 64 RIGHT 8
+PINATTR PinName b
+PINATTR SpiceOrder 6

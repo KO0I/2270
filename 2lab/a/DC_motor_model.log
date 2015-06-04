@@ -1,0 +1,15 @@
+Circuit: * Z:\home\patrick\Dropbox\2270ecen\2lab\a\DC_motor_model.asc
+
+WARNING: Node N002 is floating.
+WARNING: Node -DC is floating.
+
+WARNING: Less than two connections to node +DC.  This node is used by LM.
+WARNING: Less than two connections to node -DC.  This node is used by BEMF.
+WARNING: Less than two connections to node ENC.  This node is used by R1.
+Direct Newton iteration for .op point succeeded.
+Singular matrix:  Check node emf
+   Iteration No. 1
+Fatal Error: Singular matrix:  check node emf
+   Iteration No. 1
+
+This circuit has floating nodes.

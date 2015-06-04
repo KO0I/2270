@@ -1,0 +1,83 @@
+-------------------------------------------------------------------------------
+Part A
+-------------------------------------------------------------------------------
+
+-----------------------
+Cleanup
+-----------------------
+
+First, we built the second feedback controller for the other wheel
+and tested it. We also built and tested the associated PMOS switches
+and op-amp configuration
+
+Next, we cleaned up the connections on the board so future
+troubleshooting would be simpler. We clipped the axial leads on the
+resistors and capacitors so they were closer to the breadboard
+surface (and less likely to short out). 
+
+After cleaning everything up, we tested to make sure that the
+functionality of the system was unaltered.
+
+----------------------
+Debugging
+----------------------
+
+After replacing the broken encoder, we found that the wheel speed on
+one side (with the replaced encoder) was around 100[Hz] too slow in
+both directions.
+Therefore, we began investigating the problem first on the
+breadboard; since one side was behaving as designed, we could
+compare measurements with the hope of isolating the problem. We
+started with the R1, C1 capacitors for the trigger level. We found
+the waveforms to match, except for the same frequency discrepancy.
+Next, we reversed the encoder and input ribbons and found that the
+wheel rotation disparity was due to one of the feedback control
+routes not working correctly. We suspected that the resistors Rb may
+not have equaled 642[Ohms] as intended; since we soldered the
+resistors in parallel to save space, improper soldering may have
+caused a change in resistance, altering the current and voltage to
+the BJTs in the DC supply, and therefore afflicting the wheel speed.
+
+Next, we swapped the DC supply units to rule out wear damage, but
+the units were in equally good condition.
+
+We found noise on the output of the 555 timer; we put small
+capacitors (code 103) on the PWM out to ground to remove the noise.
+However, the greater problem remained; every once in a while, the
+PWM output would stay high, and the wheels would lock up. The output
+to the comparitor was high, which meant that a DC 5V was fed to the
+feedback loop. At this point, the only way to get the wheels moving
+again was to physically jerk the wheels at least 1 encoder
+increment. The wheels would often lock up randomly, however, and
+this was more likely if the VREF had a lower PWM. One crude solution
+was to place a resistor between the comparitor outputs to ground,
+pulling the signal below the threshold if it stayed high. This
+altered the speed dynamic of the motor, however.
+
+After much wasted time, the issue was found to be a wiring error of
+our 555 timers - the input was set up correctly and the components
+were arranged to conform to the specifications. 
+
+
+------------------------
+Task 2 - Modified Blink
+------------------------
+
+<not yet done>
+
+------------------------
+Task 3 - Speed control
+------------------------
+
+Next, we programmed the Arduino with the single-wheel speed control
+test program, and then connected it to the breadboard such that it
+could control the wheels' speed with the output of its digital pins.
+We plugged everything and tested the example speed control code
+and found that it worked as intended.
+
+However, because each wheel spun at slightly different rates, we had
+to use the arduino to change the rate each wheel rotated at.
+
+
+
+

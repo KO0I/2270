@@ -1,0 +1,22 @@
+Using the position control code example, we rotated a single wheel 3
+times. This was highly accurate.
+
+Next, we modified the code to rotate 360 degrees clockwise, then
+delay 1 second, and then rotate 360 degrees counter-clockwise.
+Finally, after waiting another second, the robot would begin
+rotating again ad infinium. A copy of the code used can be found in
+the appendix. In order to get the robot to move 360, we had both
+wheels make 2 complete revolutions, stop and then make 2 revolutions
+in the opposite direction. However, because the code does not make
+any attempt to compensate for the mechanical differences in each
+wheel motor, the robot will rotate, but will slowly make its way
+across the room in a zig-zag pattern.
+
+We also tried using higher speeds, and found that if the wheel is
+going particularly fast, then it will not immediately stop. Ideally,
+if the stop position is known, a braking function can be used (by
+telling the wheels to rotate in the opposite direction). We
+implemented this crudely by having the wheels slow down as they
+approached the final position.
+
+NOTE - I've screwed up the position code.

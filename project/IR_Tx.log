@@ -1,0 +1,25 @@
+Circuit: * H:\Dropbox\2270ecen\project\IR_Tx.asc
+
+Warning: Multiple definitions of model "mur460" Type: Diode
+Warning: Multiple definitions of model "mv2201" Type: Diode
+Direct Newton iteration for .op point succeeded.
+
+Date: Thu Dec 12 01:54:34 2013
+Total elapsed time: 0.305 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 3992
+traniter = 3975
+tranpoints = 1570
+accept = 1434
+rejected = 136
+matrix size = 55
+fillins = 0
+solver = Normal
+Thread vector: 11.3/8.4[2] 4.8/3.8[2] 2.2/2.5[1] 0.8/1.5[1]  2592/500
+Matrix Compiler1: 2.34 KB object code size  1.9/1.2/[0.9]
+Matrix Compiler2: 3.69 KB object code size  1.1/1.8/[0.9]
+
+

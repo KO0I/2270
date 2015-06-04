@@ -1,0 +1,24 @@
+Circuit: * Z:\home\patrick\Dropbox\2270ecen\2lab\b\tach.asc
+
+WARNING: Node X1:N002 is floating.
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Wed Sep 25 15:23:13 2013
+Total elapsed time: 1.870 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 174917
+traniter = 174902
+tranpoints = 52416
+accept = 41343
+rejected = 11073
+matrix size = 27
+fillins = 2
+solver = Normal
+Matrix Compiler1: 872 bytes object code size  1.8/1.1/[0.7]
+Matrix Compiler2: off  [1.0]/1.5/1.1
+
+

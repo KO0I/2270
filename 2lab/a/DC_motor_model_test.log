@@ -1,0 +1,25 @@
+Circuit: * Z:\home\patrick\Dropbox\2270ecen\2lab\a\DC_motor_model_test.asc
+
+WARNING: Node X1:N002 is floating.
+
+WARNING: Less than two connections to node PULSE.  This node is used by R:X1:1.
+Direct Newton iteration for .op point succeeded.
+
+Date: Wed Sep 25 15:35:17 2013
+Total elapsed time: 0.446 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 40097
+traniter = 40094
+tranpoints = 11584
+accept = 8558
+rejected = 3026
+matrix size = 11
+fillins = 2
+solver = Normal
+Matrix Compiler1: 360 bytes object code size  0.9/0.5/[0.5]
+Matrix Compiler2: 699 bytes object code size  0.6/0.7/[0.5]
+
+

@@ -1,0 +1,22 @@
+Circuit: * H:\Dropbox\2270ecen\5lab\Transmitter2.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Thu Nov 21 11:53:47 2013
+Total elapsed time: 0.062 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 5882
+traniter = 5874
+tranpoints = 1806
+accept = 1626
+rejected = 180
+matrix size = 14
+fillins = 0
+solver = Normal
+Matrix Compiler1: 384 bytes object code size  0.6/0.3/[0.2]
+Matrix Compiler2: 776 bytes object code size  0.3/0.3/[0.2]
+
+

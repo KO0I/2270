@@ -1,0 +1,22 @@
+Circuit: * \\eces172.colorado.edu\paha5124\win7folders\Desktop\ECEN2270\Draft1.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Thu Sep 05 11:23:27 2013
+Total elapsed time: 0.349 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 16731
+traniter = 16726
+tranpoints = 4009
+accept = 3335
+rejected = 674
+matrix size = 16
+fillins = 0
+solver = Normal
+Matrix Compiler1: 484 bytes object code size  0.5/0.2/[0.1]
+Matrix Compiler2: 1020 bytes object code size  0.3/0.5/[0.3]
+
+

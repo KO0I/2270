@@ -1,0 +1,50 @@
+Circuit: * Z:\home\patrick\Dropbox\2270ecen\2lab\b\Draft3.asc
+
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+Gmin = 0.413554
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+Gmin = 0.407064
+vernier = 0.0078125
+vernier = 0.00390625
+Gmin = 0.403506
+vernier = 0.00520833
+vernier = 0.00694444
+Gmin = 0.3976
+vernier = 0.00347222
+vernier = 0.00173611
+vernier = 0.000868055
+vernier = 0.000434028
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 9.09979%
+Starting source stepping with srcstepmethod=1
+Source Step = 3.0303%
+Source stepping failed
+
+Pseudo Transient failed in finding the operating point.
+Trouble finding operating point....skipping operating point for Transient analysis.
+Changing Tseed to 9.76562e-009
+Changing Tseed to 9.76563e-011
+Changing Tseed to 9.76562e-008
+Changing Tseed to 9.76562e-012
+Changing Tseed to 9.76563e-007
+Changing Tseed to 9.76562e-013
+Changing Tseed to 9.76562e-006
+Changing Tseed to 9.76563e-014
+Changing Tseed to 9.76563e-005
+Changing Tseed to 9.76562e-015
+Changing Tseed to 0.000976563
+Changing Tseed to 9.76562e-016
+Fatal Error: Analysis:  Time step too small; initial timepoint: trouble with node "n002"
+

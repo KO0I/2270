@@ -1,0 +1,14 @@
+* H:\Dropbox\2270ecen\project\IR_Rx.asc
+V§IR_1 Far_Right_Signal 0 5
+V§IR_2 Right_Signal 0 5
+V§IR_3 IRdetect_C1 0 5
+V§IR_4 IRdetect_CC 0 5
+V§IR_5 IRdetect_C2 0 5
+V§IR_6 Left_Signal 0 5
+V§IR_7 Far_Left_Signal 0 5
+A1 IRdetect_C1 IRdetect_CC VCC VCC IRdetect_C2 0 Center_Signal 0 AND
+VCC VCC 0 5
+* IR Detector Array
+.tran 1
+.backanno
+.end
